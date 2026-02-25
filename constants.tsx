@@ -1,0 +1,378 @@
+
+import { Product } from './types';
+
+export const COLORS = {
+  background: '#FFFFFF',
+  white: '#FFFFFF',
+  textPrimary: '#1A1A1A',
+  textSecondary: '#6E6E6E',
+  gold: '#D4AF37',
+  goldHover: '#B8963F',
+  lightBorder: '#F0F0F0',
+  alternateBg: '#F9F9F9',
+};
+
+export const PRODUCTS: Product[] = [
+  // Hublot Collection
+  {
+    id: 'hublot-black',
+    name: 'Hublot Classic Fusion Black',
+    price: 45000,
+    description: 'The Hublot Classic Fusion Black combines ceramic and rubber for a bold, contemporary look. Swiss automatic movement ensures precision timekeeping.',
+    category: 'Modern',
+    material: 'Ceramic',
+    complications: ['Automatic'],
+    image: '/hublot-black.jpeg',
+    gallery: ['/hublot-black.jpeg'],
+    specs: ['45mm Case Size', 'Swiss Automatic Movement', 'Black Ceramic Case', 'Rubber Strap'],
+    features: ['Scratch Resistant', 'Anti-reflective Sapphire', 'Water Resistant 50m']
+  },
+  {
+    id: 'hublot-blue',
+    name: 'Hublot Classic Fusion Blue',
+    price: 47000,
+    description: 'A striking blue dial Hublot with titanium case. Perfect for both formal and casual occasions with its versatile design.',
+    category: 'Modern',
+    material: 'Titanium',
+    complications: ['Automatic'],
+    image: '/hublot-blue.jpeg',
+    gallery: ['/hublot-blue.jpeg'],
+    specs: ['45mm Case Size', 'Swiss Automatic Movement', 'Titanium Case', 'Blue Dial'],
+    features: ['Lightweight Construction', 'Date Display', 'Water Resistant 50m']
+  },
+  {
+    id: 'hublot-cream',
+    name: 'Hublot Classic Fusion Cream',
+    price: 42000,
+    description: 'Elegant cream dial Hublot with polished titanium case. A sophisticated timepiece for the modern gentleman.',
+    category: 'Classic',
+    material: 'Titanium',
+    complications: ['Date'],
+    image: '/hublot-cream.jpeg',
+    gallery: ['/hublot-cream.jpeg'],
+    specs: ['42mm Case Size', 'Swiss Automatic Movement', 'Titanium Case', 'Cream Dial'],
+    features: ['Polished Finish', 'Date Window', 'Water Resistant 50m']
+  },
+  {
+    id: 'hublot-gold-black',
+    name: 'Hublot King Gold Black',
+    price: 50000,
+    description: 'Luxurious King Gold case with black ceramic bezel. The ultimate statement of power and prestige.',
+    category: 'Elite',
+    material: 'Gold',
+    complications: ['Chronograph'],
+    image: '/hublot-gold-black.jpeg',
+    gallery: ['/hublot-gold-black.jpeg'],
+    specs: ['45mm Case Size', 'Chronograph Movement', '18K King Gold', 'Black Ceramic Bezel'],
+    features: ['Chronograph Function', 'Sapphire Crystal', 'Limited Edition']
+  },
+  {
+    id: 'hublot-gold',
+    name: 'Hublot Classic Fusion Gold',
+    price: 48000,
+    description: 'Pure luxury with 18K gold case and bracelet. A timeless piece that exudes sophistication and success.',
+    category: 'Elite',
+    material: 'Gold',
+    complications: ['Automatic'],
+    image: '/hublot-gold.jpeg',
+    gallery: ['/hublot-gold.jpeg'],
+    specs: ['45mm Case Size', 'Swiss Automatic Movement', '18K Gold Case', 'Gold Bracelet'],
+    features: ['Full Gold Construction', 'Date Display', 'Water Resistant 50m']
+  },
+  {
+    id: 'hublot-green',
+    name: 'Hublot Classic Fusion Green',
+    price: 46000,
+    description: 'Vibrant green dial Hublot that makes a bold statement. Perfect for those who dare to be different.',
+    category: 'Modern',
+    material: 'Titanium',
+    complications: ['Automatic'],
+    image: '/hublot-green.jpeg',
+    gallery: ['/hublot-green.jpeg'],
+    specs: ['45mm Case Size', 'Swiss Automatic Movement', 'Titanium Case', 'Green Dial'],
+    features: ['Bold Green Dial', 'Luminous Hands', 'Water Resistant 50m']
+  },
+  {
+    id: 'hublot-wood',
+    name: 'Hublot Classic Fusion Wood',
+    price: 49000,
+    description: 'Unique wooden bezel Hublot combining natural materials with Swiss precision. A conversation starter.',
+    category: 'Limited',
+    material: 'Wood',
+    complications: ['Automatic'],
+    image: '/hublot-wood.jpeg',
+    gallery: ['/hublot-wood.jpeg'],
+    specs: ['45mm Case Size', 'Swiss Automatic Movement', 'Wooden Bezel', 'Titanium Case'],
+    features: ['Natural Wood Elements', 'Eco-friendly', 'Limited Production']
+  },
+
+  // Jaeger-LeCoultre Collection
+  {
+    id: 'jaeger-black',
+    name: 'Jaeger-LeCoultre Master Black',
+    price: 44000,
+    description: 'Sophisticated black dial Jaeger with stainless steel case. The epitome of Swiss watchmaking excellence.',
+    category: 'Classic',
+    material: 'Steel',
+    complications: ['Date', 'Moonphase'],
+    image: '/jaeger-black.jpeg',
+    gallery: ['/jaeger-black.jpeg'],
+    specs: ['40mm Case Size', 'Swiss Automatic Movement', 'Stainless Steel', 'Black Dial'],
+    features: ['Moonphase Complication', 'Date Display', 'Leather Strap']
+  },
+  {
+    id: 'jaeger-blue',
+    name: 'Jaeger-LeCoultre Master Blue',
+    price: 45000,
+    description: 'Elegant blue dial Jaeger with silver case. A perfect blend of tradition and modernity.',
+    category: 'Classic',
+    material: 'Steel',
+    complications: ['Date'],
+    image: '/jaeger-blue.jpeg',
+    gallery: ['/jaeger-blue.jpeg'],
+    specs: ['40mm Case Size', 'Swiss Automatic Movement', 'Stainless Steel', 'Blue Dial'],
+    features: ['Sunray Blue Dial', 'Date Window', 'Water Resistant 50m']
+  },
+  {
+    id: 'jaeger-brown',
+    name: 'Jaeger-LeCoultre Master Brown',
+    price: 43000,
+    description: 'Warm brown dial Jaeger with rose gold accents. Perfect for autumn and winter occasions.',
+    category: 'Classic',
+    material: 'Steel',
+    complications: ['Date'],
+    image: '/jaeger-brown.jpeg',
+    gallery: ['/jaeger-brown.jpeg'],
+    specs: ['40mm Case Size', 'Swiss Automatic Movement', 'Stainless Steel', 'Brown Dial'],
+    features: ['Rose Gold Accents', 'Brown Leather Strap', 'Classic Design']
+  },
+  {
+    id: 'jaeger-green',
+    name: 'Jaeger-LeCoultre Master Green',
+    price: 47000,
+    description: 'Rich green dial Jaeger that captures the essence of nature. A distinctive timepiece for collectors.',
+    category: 'Signature',
+    material: 'Steel',
+    complications: ['Date', 'Moonphase'],
+    image: '/jaeger-green.jpeg',
+    gallery: ['/jaeger-green.jpeg'],
+    specs: ['40mm Case Size', 'Swiss Automatic Movement', 'Stainless Steel', 'Green Dial'],
+    features: ['Moonphase Display', 'Green Leather Strap', 'Limited Edition']
+  },
+  {
+    id: 'jaeger-orange',
+    name: 'Jaeger-LeCoultre Master Orange',
+    price: 48000,
+    description: 'Bold orange dial Jaeger that stands out in any collection. Vibrant and sophisticated.',
+    category: 'Signature',
+    material: 'Steel',
+    complications: ['Chronograph'],
+    image: '/jaeger-orange.jpeg',
+    gallery: ['/jaeger-orange.jpeg'],
+    specs: ['42mm Case Size', 'Chronograph Movement', 'Stainless Steel', 'Orange Dial'],
+    features: ['Chronograph Function', 'Orange Leather Strap', 'Sporty Elegance']
+  },
+  {
+    id: 'jaeger-red',
+    name: 'Jaeger-LeCoultre Master Red',
+    price: 49000,
+    description: 'Striking red dial Jaeger with stainless steel case. A passionate timepiece for bold personalities.',
+    category: 'Signature',
+    material: 'Steel',
+    complications: ['Chronograph'],
+    image: '/jaeger-red.jpeg',
+    gallery: ['/jaeger-red.jpeg'],
+    specs: ['42mm Case Size', 'Chronograph Movement', 'Stainless Steel', 'Red Dial'],
+    features: ['Bold Red Dial', 'Chronograph Function', 'Limited Production']
+  },
+
+  // Luxury Gold Chain Collection
+  {
+    id: 'luxury-gold-chain-green',
+    name: 'Luxury Gold Chain Green',
+    price: 38000,
+    description: 'Elegant gold chain watch with green dial. Perfect blend of luxury and contemporary style.',
+    category: 'Modern',
+    material: 'Gold',
+    complications: ['Date'],
+    image: '/luxury-gold-chain-watch-green.jpeg',
+    gallery: ['/luxury-gold-chain-watch-green.jpeg'],
+    specs: ['42mm Case Size', 'Quartz Movement', 'Gold Plated', 'Green Dial'],
+    features: ['Gold Chain Bracelet', 'Green Dial', 'Date Display']
+  },
+  {
+    id: 'luxury-gold-chain-purple',
+    name: 'Luxury Gold Chain Purple',
+    price: 40000,
+    description: 'Regal purple dial gold chain watch. A statement piece for special occasions.',
+    category: 'Elite',
+    material: 'Gold',
+    complications: ['Date'],
+    image: '/luxury-gold-chain-watch-purple.jpeg',
+    gallery: ['/luxury-gold-chain-watch-purple.jpeg'],
+    specs: ['42mm Case Size', 'Quartz Movement', 'Gold Plated', 'Purple Dial'],
+    features: ['Purple Dial', 'Gold Chain Bracelet', 'Elegant Design']
+  },
+  {
+    id: 'luxury-gold-chain-red',
+    name: 'Luxury Gold Chain Red',
+    price: 42000,
+    description: 'Bold red dial gold chain watch. Perfect for those who love to make a statement.',
+    category: 'Elite',
+    material: 'Gold',
+    complications: ['Date'],
+    image: '/luxury-gold-chain-watch-red.jpeg',
+    gallery: ['/luxury-gold-chain-watch-red.jpeg'],
+    specs: ['42mm Case Size', 'Quartz Movement', 'Gold Plated', 'Red Dial'],
+    features: ['Vibrant Red Dial', 'Gold Chain Bracelet', 'Eye-catching Design']
+  },
+
+  // Poedagar V1 Collection
+  {
+    id: 'poedagarv1-black',
+    name: 'Poedagar V1 Black Classic',
+    price: 32000,
+    description: 'Timeless black dial Poedagar with stainless steel bracelet. Affordable luxury at its finest.',
+    category: 'Classic',
+    material: 'Steel',
+    complications: ['Date'],
+    image: '/poedagarv1-black.jpeg',
+    gallery: ['/poedagarv1-black.jpeg'],
+    specs: ['44mm Case Size', 'Japanese Automatic', 'Stainless Steel', 'Black Dial'],
+    features: ['Automatic Movement', 'Date Display', 'Water Resistant 30m']
+  },
+  {
+    id: 'poedagarv1-brown',
+    name: 'Poedagar V1 Brown Leather',
+    price: 31000,
+    description: 'Classic brown leather strap Poedagar. Perfect for business and formal occasions.',
+    category: 'Classic',
+    material: 'Steel',
+    complications: ['Date'],
+    image: '/poedagarv1-brown.jpeg',
+    gallery: ['/poedagarv1-brown.jpeg'],
+    specs: ['42mm Case Size', 'Japanese Automatic', 'Stainless Steel', 'Brown Dial'],
+    features: ['Brown Leather Strap', 'Classic Design', 'Date Display']
+  },
+  {
+    id: 'poedagarv1-darkblue',
+    name: 'Poedagar V1 Dark Blue',
+    price: 33000,
+    description: 'Sophisticated dark blue dial Poedagar with stainless steel bracelet. Modern and versatile.',
+    category: 'Modern',
+    material: 'Steel',
+    complications: ['Date'],
+    image: '/poedagarv1-darkblue.jpeg',
+    gallery: ['/poedagarv1-darkblue.jpeg'],
+    specs: ['44mm Case Size', 'Japanese Automatic', 'Stainless Steel', 'Blue Dial'],
+    features: ['Dark Blue Dial', 'Luminous Hands', 'Water Resistant 30m']
+  },
+  {
+    id: 'poedagarv1-green',
+    name: 'Poedagar V1 Green',
+    price: 34000,
+    description: 'Distinctive green dial Poedagar. A fresh take on classic watch design.',
+    category: 'Modern',
+    material: 'Steel',
+    complications: ['Date'],
+    image: '/poedagarv1-green.jpeg',
+    gallery: ['/poedagarv1-green.jpeg'],
+    specs: ['42mm Case Size', 'Japanese Automatic', 'Stainless Steel', 'Green Dial'],
+    features: ['Green Dial', 'Date Display', 'Affordable Luxury']
+  },
+  {
+    id: 'poedagarv1-teal',
+    name: 'Poedagar V1 Teal',
+    price: 35000,
+    description: 'Unique teal dial Poedagar that stands out. Perfect for the modern individualist.',
+    category: 'Signature',
+    material: 'Steel',
+    complications: ['Date'],
+    image: '/poedagarv1-teal.jpeg',
+    gallery: ['/poedagarv1-teal.jpeg'],
+    specs: ['42mm Case Size', 'Japanese Automatic', 'Stainless Steel', 'Teal Dial'],
+    features: ['Unique Teal Dial', 'Date Display', 'Sporty Design']
+  },
+  {
+    id: 'poedagarv1-woodbrown',
+    name: 'Poedagar V1 Wood Brown',
+    price: 36000,
+    description: 'Natural wood dial Poedagar combining traditional craftsmanship with modern design.',
+    category: 'Limited',
+    material: 'Wood',
+    complications: ['Date'],
+    image: '/poedagarv1-woodbrown.jpeg',
+    gallery: ['/poedagarv1-woodbrown.jpeg'],
+    specs: ['44mm Case Size', 'Japanese Automatic', 'Wood Dial', 'Stainless Steel'],
+    features: ['Wood Dial', 'Natural Materials', 'Limited Production']
+  },
+
+  // Poedagar V2 Chain Collection
+  {
+    id: 'poedagarv2-chain-green',
+    name: 'Poedagar V2 Chain Green',
+    price: 37000,
+    description: 'Elegant green dial with chain bracelet. Perfect blend of sporty and sophisticated.',
+    category: 'Modern',
+    material: 'Steel',
+    complications: ['Date'],
+    image: '/poedagarv2-chain-green.jpeg',
+    gallery: ['/poedagarv2-chain-green.jpeg'],
+    specs: ['45mm Case Size', 'Japanese Automatic', 'Stainless Steel', 'Green Dial'],
+    features: ['Chain Bracelet', 'Green Dial', 'Date Display']
+  },
+  {
+    id: 'poedagarv2-chain-purple',
+    name: 'Poedagar V2 Chain Purple',
+    price: 39000,
+    description: 'Regal purple dial with chain bracelet. A statement piece for confident individuals.',
+    category: 'Signature',
+    material: 'Steel',
+    complications: ['Date'],
+    image: '/poedagarv2-chain-purple.jpeg',
+    gallery: ['/poedagarv2-chain-purple.jpeg'],
+    specs: ['45mm Case Size', 'Japanese Automatic', 'Stainless Steel', 'Purple Dial'],
+    features: ['Purple Dial', 'Chain Bracelet', 'Bold Design']
+  },
+
+  // Poedagar V3 Collection
+  {
+    id: 'poedagarv3-black',
+    name: 'Poedagar V3 Black Sport',
+    price: 40000,
+    description: 'Sporty black design with modern aesthetics. Built for active lifestyles.',
+    category: 'Modern',
+    material: 'Steel',
+    complications: ['Chronograph'],
+    image: '/poedagarv3-black.jpeg',
+    gallery: ['/poedagarv3-black.jpeg'],
+    specs: ['48mm Case Size', 'Chronograph Movement', 'Stainless Steel', 'Black Dial'],
+    features: ['Chronograph Function', 'Sporty Design', 'Water Resistant 50m']
+  },
+  {
+    id: 'poedagarv3-blue',
+    name: 'Poedagar V3 Blue Sport',
+    price: 42000,
+    description: 'Dynamic blue sport watch with chronograph functionality. Perfect for adventure seekers.',
+    category: 'Modern',
+    material: 'Steel',
+    complications: ['Chronograph'],
+    image: '/poedagarv3-blue.jpeg',
+    gallery: ['/poedagarv3-blue.jpeg'],
+    specs: ['48mm Case Size', 'Chronograph Movement', 'Stainless Steel', 'Blue Dial'],
+    features: ['Blue Dial', 'Chronograph', 'Sporty Aesthetic']
+  },
+  {
+    id: 'poedagarv3-gold',
+    name: 'Poedagar V3 Gold Elite',
+    price: 50000,
+    description: 'Luxurious gold-plated sport watch. The perfect combination of elegance and functionality.',
+    category: 'Elite',
+    material: 'Gold',
+    complications: ['Chronograph'],
+    image: '/poedagarv3-gold.jpeg',
+    gallery: ['/poedagarv3-gold.jpeg'],
+    specs: ['48mm Case Size', 'Chronograph Movement', 'Gold Plated', 'Gold Dial'],
+    features: ['Gold Plating', 'Chronograph Function', 'Premium Finish']
+  }
+];
